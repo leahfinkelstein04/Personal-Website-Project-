@@ -7,7 +7,7 @@ A responsive professional portfolio for marketing, communications, and strategy 
 - `index.html` contains the content and page sections.
 - `styles.css` controls colors, layout, responsive sizing, and animation.
 - `script.js` handles the mobile menu, scroll progress, and section reveals.
-- `assets/` contains the supplied photo and résumé PDF. The photo is framed with CSS; the original pixels are preserved.
+- `assets/` contains the supplied photo. The photo is framed with CSS; the original pixels are preserved.
 - `.nojekyll` tells GitHub Pages to serve these static files directly.
 
 There are no packages to install, no server-side code, no tracking, and no API keys. Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder to preview locally.
@@ -20,11 +20,11 @@ Expected URL after enabling Pages: https://leahfinkelstein04.github.io/Personal-
 
 ## Design and accessibility
 
-Black and white with a vivid blue accent, large typography, a real portrait, and concise project summaries. Native expandable details reveal each project's role and contribution. Responsive layouts, keyboard focus indicators, semantic headings, image alternative text, a skip link, and reduced-motion support are included. LinkedIn and résumé links identify when they open a new tab.
+Black and white with a vivid blue accent, large typography, a real portrait, and concise project summaries. Native expandable details reveal each project's role and contribution. Responsive layouts, keyboard focus indicators, semantic headings, image alternative text, a skip link, and reduced-motion support are included. LinkedIn links identify when they open a new tab.
 
 ## Content sources
 
-Professional roles, dates, and performance metrics come from the supplied Fall 2026 résumé. Introductory copy also reflects Leah's stated career interests and education. Project summaries describe work from the résumé; they do not imply that confidential campaign materials are available. Review the résumé's contact information before changing what you want public.
+Professional roles, dates, and performance metrics come from the supplied Fall 2026 résumé. Introductory copy also reflects Leah's stated career interests and education. Project summaries describe work from the résumé; they do not imply that confidential campaign materials are available. The original résumé PDF is not published; a download can be added after explicit approval to publish its contact information.
 
 ## Research informing the design
 
@@ -38,4 +38,4 @@ Submit the public repository URL, the verified live GitHub Pages URL, and your o
 
 ## Editing later
 
-Edit the content in `index.html`, use `--blue` in `styles.css` to change the accent color, or replace the résumé PDF while preserving its filename. The portrait CSS is tailored to the supplied screenshot; update its positioning if you replace the image. Commit changes with descriptive messages so improvements are visible in the repository history.
+Edit the content in `index.html`, use `--blue` in `styles.css` to change the accent color. The portrait CSS is tailored to the supplied screenshot; update its positioning if you replace the image. Commit changes with descriptive messages so improvements are visible in the repository history.
