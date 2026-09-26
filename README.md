@@ -4,7 +4,7 @@ A responsive professional portfolio for marketing, communications, and strategy 
 
 ## How the website works
 
-- `index.html` contains the content and page sections.
+- `index.html` is the homepage. `about.html`, `experience.html`, `work.html`, and `contact.html` are separate pages with shared navigation.
 - `styles.css` controls colors, layout, responsive sizing, and animation.
 - `script.js` handles the mobile menu, scroll progress, and section reveals.
 - `assets/` contains the supplied photo. The photo is framed with CSS; the original pixels are preserved.
@@ -20,7 +20,7 @@ Expected URL after enabling Pages: https://leahfinkelstein04.github.io/Personal-
 
 ## Design and accessibility
 
-Black and white with a vivid blue accent, large typography, a real portrait, and concise project summaries. Native expandable details reveal each project's role and contribution. Responsive layouts, keyboard focus indicators, semantic headings, image alternative text, a skip link, and reduced-motion support are included. LinkedIn links identify when they open a new tab.
+Warm ivory and sage with muted teal accents and charcoal text, large typography, a real portrait, and concise project summaries. Native expandable details reveal each project's role and contribution. Responsive layouts, keyboard focus indicators, semantic headings, image alternative text, a skip link, and reduced-motion support are included. LinkedIn links identify when they open a new tab.
 
 ## Content sources
 
@@ -38,4 +38,18 @@ Submit the public repository URL, the verified live GitHub Pages URL, and your o
 
 ## Editing later
 
-Edit the content in `index.html`, use `--blue` in `styles.css` to change the accent color. The portrait CSS is tailored to the supplied screenshot; update its positioning if you replace the image. Commit changes with descriptive messages so improvements are visible in the repository history.
+Edit the content in the relevant HTML page, use `--accent` in `styles.css` to change the accent color. The portrait CSS is tailored to the supplied screenshot; update its positioning if you replace the image. Commit changes with descriptive messages so improvements are visible in the repository history.
+
+## Expanded profile content
+
+Certifications, volunteer work, and organizations were checked against [Leah’s public LinkedIn profile](https://www.linkedin.com/in/leah-c-finkelstein). The supplied résumé remains the source for detailed marketing roles and results. Each page has its own title and description, and all links use relative paths compatible with GitHub Pages.
+
+## Color palette
+
+- Warm ivory: `#F6F3EE`
+- Muted teal: `#426C65`
+- Charcoal: `#293533`
+- Sage: `#DCE5DC`
+- Card surface: `#FCFAF7`
+
+The softer palette retains readable contrast and reduced-motion support. The five-page version also adds public LinkedIn certifications, service roles, and organizations.
