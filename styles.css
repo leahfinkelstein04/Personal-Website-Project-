@@ -34,3 +34,17 @@ nav a[aria-current="page"]{color:var(--blue)}nav a[aria-current="page"]::after{t
 .skip-link{background:var(--cream)}
 @media(max-width:700px){nav{background:var(--cream)}}
 @media print{.portrait-panel,.project-blue,.home-links>a:first-child,.contact{background:white!important;color:black!important}}
+
+/* Portfolio clarity: visible roles, structured briefs, and balanced page rhythm. */
+.hero-intro{font-size:clamp(1.2rem,1.9vw,1.6rem);line-height:1.4}.hero-description{max-width:510px}
+.project h2{font-size:1.7rem;line-height:1.15;letter-spacing:-.035em;margin:32px 0 10px;text-wrap:balance}
+.project>.project-role{font-size:.875rem;font-weight:600;color:var(--accent);margin:0 0 18px!important;line-height:1.5}
+.project-dark>.project-role{color:#d4e2d7}.project-blue>.project-role{color:#365b55}
+.project-brief{margin:0}.project-brief>div+div{border-top:1px solid #8b9b8b45;margin-top:20px;padding-top:20px}
+.project-brief dt{font-size:.8125rem;font-weight:700;letter-spacing:.04em;margin-bottom:8px}
+.project-brief dd{margin:0;font-size:1rem;line-height:1.65;color:var(--muted)}.project-blue .project-brief dd{color:#40594e}.project-dark .project-brief dd{color:#d4ddd3}
+.project details[open] summary{padding-bottom:4px}.project details[open] .detail-content{padding-bottom:4px}
+.footer-links{display:flex;align-items:center;gap:24px;font-size:.875rem;color:var(--muted)}.footer-links>a{padding-block:12px}.footer-links>a:hover{color:var(--accent)}
+.next-page>a{padding-block:8px}.next-page .small-label{margin-bottom:8px}
+@media(min-width:1001px){.page-opening{padding-top:72px}.hero{padding-top:64px}.hero-footer{margin-top:0}.section-heading{gap:56px}.project{padding:38px}.about-copy{line-height:1.75}}
+@media(max-width:700px){.hero-intro{font-size:1.35rem}.project h2{font-size:1.6rem}.project>.project-role{font-size:.875rem}.footer-links{gap:20px;font-size:.8125rem}.footer{row-gap:8px}.footer-links{width:100%;justify-content:space-between;border-top:1px solid var(--line);margin-top:8px}.project summary{min-height:64px}}

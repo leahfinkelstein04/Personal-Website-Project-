@@ -53,3 +53,7 @@ Certifications, volunteer work, and organizations were checked against [Leah’s
 - Card surface: `#FCFAF7`
 
 The softer palette retains readable contrast and reduced-motion support. The five-page version also adds public LinkedIn certifications, service roles, and organizations.
+
+## Latest refinement
+
+The homepage now explains the marketing disciplines Leah has worked in. Project roles are visible before expansion, with readable briefs separating contributions from results or deliverables. Navigation arrows consistently indicate links to other pages, and each footer links to Contact.
