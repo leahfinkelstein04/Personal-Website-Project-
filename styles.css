@@ -48,3 +48,75 @@ nav a[aria-current="page"]{color:var(--blue)}nav a[aria-current="page"]::after{t
 .next-page>a{padding-block:8px}.next-page .small-label{margin-bottom:8px}
 @media(min-width:1001px){.page-opening{padding-top:72px}.hero{padding-top:64px}.hero-footer{margin-top:0}.section-heading{gap:56px}.project{padding:38px}.about-copy{line-height:1.75}}
 @media(max-width:700px){.hero-intro{font-size:1.35rem}.project h2{font-size:1.6rem}.project>.project-role{font-size:.875rem}.footer-links{gap:20px;font-size:.8125rem}.footer{row-gap:8px}.footer-links{width:100%;justify-content:space-between;border-top:1px solid var(--line);margin-top:8px}.project summary{min-height:64px}}
+
+
+/* An editorial portfolio: original decorative covers, never campaign mockups. */
+:root{--blush:#eedbd4;--plum:#654650}
+h1 em,h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:var(--accent)}
+.hero h1{font-weight:500;font-size:clamp(3.3rem,7.5vw,7rem);letter-spacing:-.065em}
+.hero h1 em{letter-spacing:-.07em}
+.editorial-home .portrait-panel{border-radius:48% 48% 12px 12px;background:linear-gradient(145deg,#eee1d6,#dce5dc);overflow:visible;isolation:isolate}
+.portrait-sticker{position:absolute;z-index:2;right:-12px;top:42px;padding:18px 22px;border-radius:50%;background:#eedbd4;color:#654650;box-shadow:0 6px 20px #65465012;transform:rotate(9deg);font-family:Georgia,serif;font-style:italic;text-align:center;font-size:1.2rem;line-height:1.2}
+.editorial-home .portrait-caption{padding-top:22px}
+.editorial-home .portrait-bottom{font-family:Georgia,serif;font-style:italic;font-size:1.6rem}
+.specialty-ribbon{margin-top:40px;padding:22px 24px;background:var(--blush);border-block:1px solid #ddc7bf;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:22px 38px;color:#654650;font-size:.85rem;letter-spacing:.06em}
+.specialty-ribbon b{font-size:1.6rem;line-height:1}
+.featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.feature-card{display:block;min-width:0}
+.work-cover{position:relative;isolation:isolate;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;border-radius:12px;padding:30px;color:#293533;background:#dce5dc;transition:transform .35s}
+.cover-kicker{font-size:.68rem;letter-spacing:.14em;font-weight:700;z-index:1}
+.cover-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,3.5vw,3.4rem);letter-spacing:-.055em;line-height:1.05;z-index:1;max-width:95%;padding-block:26px}
+.cover-note{font-size:.75rem;font-weight:600;z-index:1}
+.work-cover i{position:absolute;z-index:0;pointer-events:none}
+.cover-beach{background:#eadcc6;color:#4c4939}
+.sun-disc{height:190px;width:190px;border-radius:50%;background:#cfad76;right:-35px;top:-45px;box-shadow:0 0 0 26px #cfad7633,0 0 0 52px #cfad761c}
+.cover-beach::after{content:"";position:absolute;bottom:-85px;right:-10%;width:95%;height:150px;border-radius:50%;background:#c4d5c9;transform:rotate(-12deg)}
+.cover-content{background:#eedbd4;color:#654650}
+.quote-mark{font-family:Georgia,serif;font-size:20rem;font-style:normal;color:#65465014;line-height:1;right:2px;top:12px}
+.cover-media{background:#dce5dc;color:#304e47}
+.orbit{width:260px;height:260px;border:1px solid #426c6533;border-radius:50%;right:-90px;top:-30px;box-shadow:0 0 0 24px #426c650a,0 0 0 48px #426c6508}
+.cover-campus{background:#e3dce9;color:#51405e}
+.spark{font-size:230px;line-height:1;right:-30px;bottom:-30px;font-style:normal;color:#8d749c35}
+.feature-caption{padding:24px 2px;position:relative;padding-right:30px}
+.feature-caption h3{font-size:1.35rem;margin-bottom:8px;letter-spacing:-.025em}
+.feature-caption p{font-size:.875rem}
+.feature-caption>span{position:absolute;right:0;top:22px;font-size:1.6rem}
+.feature-card:hover .work-cover{transform:translateY(-5px)}
+.featured-work{padding-bottom:30px}
+.home-highlights h2,.contact h2{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+.home-links>a:nth-child(2){background:#f0e3dd}
+.home-links>a:nth-child(3){background:#e9e3ed}
+.page-opening h1{font-weight:500}
+.work{background:var(--paper)}
+.work-filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 32px}
+.work-filters[hidden],.project[hidden]{display:none!important}
+.work-filters button{border:1px solid #b7c4ba;background:transparent;color:var(--ink);border-radius:30px;padding:10px 18px;min-height:44px;cursor:pointer;transition:background .2s,color .2s}
+.work-filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.work-filters button:hover{box-shadow:0 0 0 2px #426c6526}
+.project{background:var(--card);color:var(--ink);border:1px solid var(--line);padding:26px;scroll-margin-top:110px}
+.project .work-cover{margin-bottom:26px;min-height:260px}
+.project .project-top{font-size:.68rem}
+.project .project-stat{font-size:3.8rem;margin-top:25px;color:var(--accent)}
+.project .project-word{font-family:Georgia,serif;font-style:italic;font-size:3rem;min-height:0;margin-top:25px}
+.project h2{margin-top:24px}
+.project p,.project-dark p,.project-blue p,.project .project-brief dd{color:var(--muted)}
+.project>.project-role,.project-dark>.project-role{color:var(--accent)}
+.project summary{padding-bottom:10px}
+.project details[open] summary{padding-bottom:10px}
+.project summary>.sr-only{transform:none!important}
+.project .detail-content{padding-top:20px}
+.contact{background:linear-gradient(120deg,#e4ebe1,#eedbd4)}
+.community{background:#efe6e0}
+@media(min-width:1001px){.editorial-home .hero{grid-template-columns:1.2fr 1fr;gap:60px}.featured-work .section-heading{align-items:center}}
+@media(max-width:700px){
+.hero h1{font-size:clamp(3rem,12vw,5rem)}
+.portrait-sticker{right:0;top:22px;padding:14px 18px;font-size:1rem}
+.specialty-ribbon{gap:12px 18px;font-size:.75rem;margin-top:28px}.specialty-ribbon b{font-size:1.2rem}
+.featured-grid{grid-template-columns:1fr;gap:18px}
+.work-cover{min-height:260px;padding:26px}
+.cover-title{font-size:2.6rem}
+.project{padding:20px}.project .work-cover{min-height:235px;padding:22px}.project .cover-title{font-size:2.2rem}
+.project .project-stat{font-size:3.4rem}.work-filters{gap:8px}.work-filters button{padding:10px 14px;font-size:.875rem}
+}
+@media(prefers-reduced-motion:reduce){.feature-card:hover .work-cover{transform:none}.work-cover{transition:none}}
+@media print{.work-filters,.specialty-ribbon,.portrait-sticker{display:none}.project[hidden]{display:flex!important}.work-cover{min-height:150px}.cover-title{font-size:2rem}}

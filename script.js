@@ -36,3 +36,33 @@ motionPreference.addEventListener('change', event => {
   if (event.matches) document.querySelectorAll('.reveal.pending').forEach(element => element.classList.remove('pending'));
 });
 updateHeader();
+
+/* Progressive enhancement: every project remains visible without JavaScript. */
+const filters = document.querySelector('.work-filters');
+if (filters) {
+  const cards = [...document.querySelectorAll('.project[data-category]')];
+  const status = document.querySelector('#filter-status');
+  filters.hidden = false;
+  filters.addEventListener('click', event => {
+    const button = event.target.closest('button[data-filter]');
+    if (!button) return;
+    filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    cards.forEach(card => {
+      card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter;
+      if (!card.hidden) card.classList.remove('pending');
+    });
+    status.textContent = cards.filter(card => !card.hidden).length + ' projects shown';
+    updateProgress();
+  });
+  const revealLinkedProject = () => {
+    const target = cards.find(card => '#' + card.id === location.hash);
+    if (target) {
+      filters.querySelector('[data-filter="all"]').click();
+      target.querySelector('details').open = true;
+      target.classList.remove('pending');
+      target.scrollIntoView({block:'start'});
+    }
+  };
+  revealLinkedProject();
+  window.addEventListener('hashchange', revealLinkedProject);
+}
