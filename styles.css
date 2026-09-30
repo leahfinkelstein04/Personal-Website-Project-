@@ -120,3 +120,38 @@ h1 em,h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:va
 }
 @media(prefers-reduced-motion:reduce){.feature-card:hover .work-cover{transform:none}.work-cover{transition:none}}
 @media print{.work-filters,.specialty-ribbon,.portrait-sticker{display:none}.project[hidden]{display:flex!important}.work-cover{min-height:150px}.cover-title{font-size:2rem}}
+
+
+/* A personal editorial masthead and native-size headshot presentation. */
+.wordmark.identity-mark{display:inline-flex;align-items:center;gap:12px;letter-spacing:0;font-weight:400;flex-shrink:0;line-height:1}
+.identity-mark span{color:inherit}
+.identity-emblem{display:grid;place-items:center;flex:0 0 46px;width:46px;height:46px;background:var(--blush);border-radius:50%;color:var(--accent)!important}
+.identity-emblem svg{display:block;width:40px;height:40px}
+.identity-copy{display:flex;flex-direction:column;gap:7px}
+.identity-title{font-family:Georgia,'Times New Roman',serif;font-size:1.42rem;letter-spacing:-.04em;white-space:nowrap;line-height:1.05}
+.identity-subtitle{font-family:Arial,Helvetica,sans-serif;font-size:.58rem;letter-spacing:.12em;font-weight:600;line-height:1.2;color:var(--muted)!important}
+.portrait{width:min(280px,100%);max-width:280px;border-width:4px}
+/* The source headshot is about 280 px across; avoid enlarging it further. */
+.portrait-panel:hover .portrait{transform:none}
+.footer .identity-title{font-size:1.2rem}
+.footer .identity-emblem{width:40px;height:40px;flex-basis:40px}
+@media(min-width:701px) and (max-width:1000px){
+.header .identity-mark{gap:9px}.header .identity-title{font-size:1.18rem}
+.header .identity-subtitle{font-size:.52rem;letter-spacing:.07em}
+.header .identity-emblem{width:38px;height:38px;flex-basis:38px}
+.header nav{gap:14px;font-size:.875rem}.header .nav-contact{padding-left:14px}
+}
+@media(max-width:700px){
+.header .identity-mark{gap:8px;max-width:calc(100% - 95px)}
+.header .identity-emblem{width:36px;height:36px;flex-basis:36px}
+.header .identity-emblem svg{width:32px;height:32px}
+.header .identity-title{font-size:clamp(.94rem,3.7vw,1.25rem)}
+.header .identity-subtitle{font-size:.49rem;letter-spacing:.04em}
+.portrait{width:min(280px,100%);max-width:280px}
+.footer .identity-mark{gap:9px}.footer .identity-title{font-size:1.05rem}
+}
+@media(max-width:360px){
+.header .identity-mark{gap:5px}.header .identity-emblem{width:30px;height:30px;flex-basis:30px}
+.header .identity-emblem svg{width:28px;height:28px}.header .identity-subtitle{font-size:.44rem}
+.footer{flex-wrap:wrap}
+}
